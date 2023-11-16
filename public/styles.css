@@ -1,0 +1,23 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#auth-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.auth-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+#notes-section {
+    margin-top: 50px;
+}
+
+#notes-section button {
+    font-size: 1.5em;
+}

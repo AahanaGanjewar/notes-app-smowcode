@@ -1,0 +1,56 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include your app.js file -->
+    <script src="./js/app.js"></script>
+</head>
+
+<body>
+
+    <!-- Login and Sign Up buttons -->
+    <div id="auth-buttons">
+        <button onclick="showLoginForm()">Login</button>
+        <button onclick="showSignupForm()">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-form" style="display: none;">
+        <h2>Login</h2>
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" placeholder="Enter your username">
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" placeholder="Enter your password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signup-form" style="display: none;">
+        <h2>Sign Up</h2>
+        <label for="signup-username">Username:</label>
+        <input type="text" id="signup-username" placeholder="Choose a username">
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" placeholder="Choose a password">
+        <button onclick="signup()">Sign Up</button>
+    </div>
+
+    <!-- Logout button -->
+    <button onclick="logout()" style="display: none;">Logout</button>
+
+    <!-- Notes Section -->
+    <div id="notes-section" style="display: none;">
+        <h2>Welcome, <span id="user-username"></span>!</h2>
+        <ul id="notes-list"></ul>
+        <button onclick="showAddNoteForm()">Add Note</button>
+    </div>
+
+</body>
+
+</html>
